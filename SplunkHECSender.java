@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 
 public class SplunkHECSender {
 
-    private static final String HEC_URL = "http://i-034c90268937ffe76.ec2.splunkit.io:8088/services/collector";
+    private static final String HEC_URL = "http://<host>:8088/services/collector";
     private static final String HEC_TOKEN = "00000000-0000-0000-0000-000000000000";
     private static final int NUM_EVENTS = 1000; // Define the number of events you want to send
     private static final int NUM_THREADS = 5; // Define the number of threads to send events in parallel
